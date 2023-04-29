@@ -28,6 +28,7 @@ public class uping extends AppCompatActivity {
                 Intent second = new Intent(uping.this,MainActivity.class);
                 second.putExtra("name" ,name.getText().toString());
                 second.putExtra("Phone",Phone.getText().toString());
+                startActivity(second);
                 finish();
             }
         });
